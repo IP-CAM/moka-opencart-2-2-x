@@ -192,7 +192,6 @@ class ControllerPaymentMokaPayment extends Controller {
             $gateway_url = _MOKA_3D_URL_;
         }
 
-echo $gateway_url;
         $result = json_decode($this->curlPostExt(json_encode($moka), $gateway_url, true));
 
         if (!$result OR $result == NULL) {
