@@ -193,7 +193,7 @@ class ControllerPaymentMokaPayment extends Controller {
             'InstallmentNumber' => (string) $installement,
             'OtherTrxCode' => (string) $orderid,
             'ClientIP' => $order_info['ip'],
-            'Software' => 'Opencart-156',
+            'Software' => 'Opencart-22',
 	    'ReturnHash' => 1,
             'RedirectUrl' => $this->url->link('payment/moka_payment', '', 'SSL')
         );
